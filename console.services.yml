@@ -1,0 +1,13 @@
+services:
+  data_fixtures.export:
+    class: Drupal\data_fixtures\Command\ExportCommand
+    arguments: []
+    tags:
+      - { name: drupal.command }
+
+  data_fixtures.load:
+    class: Drupal\data_fixtures\Command\LoadCommand
+    arguments: []
+    tags:
+      - { name: drupal.command }
+
