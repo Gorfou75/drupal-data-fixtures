@@ -11,6 +11,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
  * Class EntityDataFixtures
+ *
  * A data fixtures type plugin for content entities.
  *
  * @package Drupal\data_fixtures\Plugin\DataFixtures\DataFixturesType
