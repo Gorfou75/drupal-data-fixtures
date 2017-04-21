@@ -1,0 +1,26 @@
+{
+  "name": "drupal/data_fixtures",
+  "type": "drupal-module",
+  "description": "Provides a simple way to load and export data fixtures.",
+  "keywords": [
+    "Drupal",
+    "Content",
+    "Developer",
+    "Drush",
+    "Import/Export"
+  ],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/data_fixtures",
+  "authors": [
+    {
+      "name": "Samy RANAVELA",
+      "homepage": "https://www.drupal.org/u/samyranavela"
+    }
+  ],
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/data_fixtures",
+    "source": "http://cgit.drupalcode.org/data_fixtures"
+  },
+  "require": {}
+}

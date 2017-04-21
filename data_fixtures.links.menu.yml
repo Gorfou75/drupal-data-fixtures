@@ -1,0 +1,5 @@
+data_fixtures.sync:
+  title: 'Data fixtures'
+  description: 'Load and export data fixtures.'
+  route_name: data_fixtures.sync
+  parent: system.admin_config_development

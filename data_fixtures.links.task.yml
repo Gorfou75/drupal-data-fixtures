@@ -1,0 +1,29 @@
+data_fixtures.sync:
+  route_name: data_fixtures.sync
+  base_route: data_fixtures.sync
+  title: 'Synchronize'
+
+data_fixtures.import:
+  route_name: data_fixtures.import
+  title: 'Import'
+  base_route: data_fixtures.sync
+
+data_fixtures.export:
+  route_name: data_fixtures.export
+  title: 'Export'
+  base_route: data_fixtures.sync
+
+data_fixtures.export_content:
+  route_name: data_fixtures.export
+  title: 'Content'
+  parent_id: data_fixtures.export
+
+data_fixtures.export_template:
+  route_name: data_fixtures.export_template
+  title: 'Template'
+  parent_id: data_fixtures.export
+
+data_fixtures.settings:
+  route_name: data_fixtures.settings
+  title: 'Settings'
+  base_route: data_fixtures.sync

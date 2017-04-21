@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file
+ * Contains data_fixtures.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ *
+ * @param                                          $route_name
+ * @param \Drupal\Core\Routing\RouteMatchInterface $route_match
+ *
+ * @return string
+ */
+function data_fixtures_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the data_fixtures module.
+    case 'help.page.data_fixtures':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}

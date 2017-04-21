@@ -1,0 +1,39 @@
+data_fixtures.sync:
+  path: '/admin/config/development/data-fixtures'
+  defaults:
+    _form: '\Drupal\data_fixtures\Form\DataFixturesSyncForm'
+    _title: 'Synchronize'
+  requirements:
+    _permission: 'synchronize data fixtures'
+
+data_fixtures.import:
+  path: '/admin/config/development/data-fixtures/import'
+  defaults:
+    _form: '\Drupal\data_fixtures\Form\DataFixturesImportForm'
+    _title: 'Import'
+  requirements:
+    _permission: 'import data fixtures'
+
+data_fixtures.export:
+  path: '/admin/config/development/data-fixtures/export'
+  defaults:
+    _form: '\Drupal\data_fixtures\Form\DataFixturesExportForm'
+    _title: 'Export'
+  requirements:
+    _permission: 'export data fixtures'
+
+data_fixtures.export_template:
+  path: '/admin/config/development/data-fixtures/export/template'
+  defaults:
+    _form: '\Drupal\data_fixtures\Form\DataFixturesExportTemplateForm'
+    _title: 'Export'
+  requirements:
+    _permission: 'export data fixtures'
+
+data_fixtures.settings:
+  path: '/admin/config/development/data-fixtures/settings'
+  defaults:
+    _form: '\Drupal\data_fixtures\Form\DataFixturesSettingsForm'
+    _title: 'Settings'
+  requirements:
+    _permission: 'access data fixtures configuration'

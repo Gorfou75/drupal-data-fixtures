@@ -1,0 +1,12 @@
+synchronize data fixtures:
+  title: 'Synchronize data fixtures'
+  restrict access: true
+export data fixtures:
+  title: 'Export data fixtures'
+  restrict access: true
+import data fixtures:
+  title: 'Import data fixtures'
+  restrict access: true
+access data fixtures configuration:
+  title: 'Access data fixtures configuration'
+  restrict access: true

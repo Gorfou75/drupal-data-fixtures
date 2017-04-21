@@ -1,0 +1,7 @@
+name: 'Data fixtures'
+type: module
+core: 8.x
+description: 'Provides a simple way to load and export data fixtures.'
+package: Development
+dependencies:
+  - serialization
