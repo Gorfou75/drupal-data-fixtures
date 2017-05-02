@@ -1,0 +1,9 @@
+id: data_fixtures_export_shortcut
+label: 'Export as data fixtures'
+status: true
+langcode: en
+type: shortcut
+plugin: data_fixtures_export
+dependencies:
+  module:
+    - shortcut

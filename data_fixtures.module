@@ -27,3 +27,25 @@ function data_fixtures_help($route_name, RouteMatchInterface $route_match) {
     default:
   }
 }
+
+/**
+ * Implements hook_file_download().
+ */
+function data_fixtures_file_download($uri) {
+  $scheme = \Drupal::service('file_system')->uriScheme($uri);
+  $target = file_uri_target($uri);
+  if ($scheme == 'temporary' && $target === 'fixtures.tar.gz') {
+    if (\Drupal::currentUser()->hasPermission('export data fixtures')) {
+      $request = \Drupal::request();
+      $date = DateTime::createFromFormat('U', $request->server->get('REQUEST_TIME'));
+      $date_string = $date->format('Y-m-d-H-i');
+      $hostname = str_replace('.', '-', $request->getHttpHost());
+      $filename = 'fixtures' . '-' . $hostname . '-' . $date_string . '.tar.gz';
+      $disposition = 'attachment; filename="' . $filename . '"';
+      return [
+        'Content-disposition' => $disposition,
+      ];
+    }
+    return -1;
+  }
+}

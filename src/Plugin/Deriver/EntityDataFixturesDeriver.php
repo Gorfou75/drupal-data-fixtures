@@ -48,12 +48,9 @@ class EntityDataFixturesDeriver extends DeriverBase implements ContainerDeriverI
    */
   public function getDerivativeDefinitions($base_plugin_definition) {
     foreach ($this->entityTypeManager->getDefinitions() as $entity_type_id => $entity_type) {
-      // An entity type must have a canonical link template and support fields.
       if ($entity_type instanceof ContentEntityTypeInterface) {
-        $this->derivatives[$entity_type_id] = $base_plugin_definition;
         $this->derivatives[$entity_type_id]['label'] = $entity_type->getLabel();
-        $this->derivatives[$entity_type_id]['types'][] = $entity_type->getBundleLabel();
-        $this->derivatives[$entity_type_id]['provider'] = $entity_type->getProvider();
+        $this->derivatives[$entity_type_id]['type'] = $entity_type_id;
         $this->derivatives[$entity_type_id]['context'] = [
           $entity_type_id => new ContextDefinition("entity:$entity_type_id", $this->t('@label being aliased', ['@label' => $entity_type->getLabel()])),
         ];

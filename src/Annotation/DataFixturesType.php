@@ -28,10 +28,10 @@ class DataFixturesType extends Plugin {
   public $label;
 
   /**
-   * The token types.
+   * The data fixtures entity type.
    *
-   * @var string[]
+   * @var string
    */
-  public $types = [];
+  public $type;
 
 }

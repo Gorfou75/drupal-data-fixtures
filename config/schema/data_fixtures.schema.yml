@@ -1,3 +1,21 @@
+action.configuration.data_fixtures_export_block_content:
+  type: action_configuration_default
+  label: 'Export as data fixtures'
+action.configuration.data_fixtures_export_file:
+  type: action_configuration_default
+  label: 'Export as data fixtures'
 action.configuration.data_fixtures_export_node:
+  type: action_configuration_default
+  label: 'Export as data fixtures'
+action.configuration.data_fixtures_export_shortcut:
+  type: action_configuration_default
+  label: 'Export as data fixtures'
+action.configuration.data_fixtures_export_taxonomy_term:
+  type: action_configuration_default
+  label: 'Export as data fixtures'
+action.configuration.data_fixtures_export_user:
+  type: action_configuration_default
+  label: 'Export as data fixtures'
+action.configuration.data_fixtures_export_menu_link_content:
   type: action_configuration_default
   label: 'Export as data fixtures'

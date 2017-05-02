@@ -1,0 +1,9 @@
+id: data_fixtures_export_user
+label: 'Export as data fixtures'
+status: true
+langcode: en
+type: user
+plugin: data_fixtures_export
+dependencies:
+  module:
+    - user

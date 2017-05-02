@@ -15,25 +15,31 @@ data_fixtures.import:
     _permission: 'import data fixtures'
 
 data_fixtures.export:
-  path: '/admin/config/development/data-fixtures/export'
+  path: '/admin/config/development/data-fixtures/export/full'
   defaults:
-    _form: '\Drupal\data_fixtures\Form\DataFixturesExportForm'
-    _title: 'Export'
+    _form: '\Drupal\data_fixtures\Form\DataFixturesFullExportForm'
+    _title: 'Full Export'
   requirements:
     _permission: 'export data fixtures'
 
-data_fixtures.export_template:
-  path: '/admin/config/development/data-fixtures/export/template'
+data_fixtures.single_export:
+  path: '/admin/config/development/data-fixtures/export/single'
   defaults:
-    _form: '\Drupal\data_fixtures\Form\DataFixturesExportTemplateForm'
-    _title: 'Export'
+    _form: '\Drupal\data_fixtures\Form\DataFixturesSingleExportForm'
+    _title: 'Single Export'
   requirements:
     _permission: 'export data fixtures'
 
-data_fixtures.settings:
-  path: '/admin/config/development/data-fixtures/settings'
+data_fixtures.export_download:
+  path: '/admin/config/development/data-fixtures/export/full/download'
   defaults:
-    _form: '\Drupal\data_fixtures\Form\DataFixturesSettingsForm'
-    _title: 'Settings'
+    _controller: '\Drupal\data_fixtures\Controller\DataFixturesController::downloadExport'
   requirements:
-    _permission: 'access data fixtures configuration'
+    _permission: 'export data fixtures'
+
+data_fixtures.multiple_export_confirm:
+  path: '/admin/data-fixtures/export'
+  defaults:
+    _form: '\Drupal\data_fixtures\Form\DataFixturesFullExportForm'
+  requirements:
+    _permission: 'export data fixtures'
