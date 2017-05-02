@@ -13,17 +13,12 @@ data_fixtures.export:
   title: 'Export'
   base_route: data_fixtures.sync
 
-data_fixtures.export_content:
+data_fixtures.full_export:
   route_name: data_fixtures.export
-  title: 'Content'
+  title: 'Full export'
   parent_id: data_fixtures.export
 
-data_fixtures.export_template:
-  route_name: data_fixtures.export_template
-  title: 'Template'
+data_fixtures.single_export:
+  route_name: data_fixtures.single_export
+  title: 'Single export'
   parent_id: data_fixtures.export
-
-data_fixtures.settings:
-  route_name: data_fixtures.settings
-  title: 'Settings'
-  base_route: data_fixtures.sync

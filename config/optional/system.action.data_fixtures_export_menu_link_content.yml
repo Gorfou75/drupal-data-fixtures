@@ -1,0 +1,9 @@
+id: data_fixtures_export_menu_link_content
+label: 'Export as data fixtures'
+status: true
+langcode: en
+type: menu_link_content
+plugin: data_fixtures_export
+dependencies:
+  module:
+    - menu_link_content

@@ -1,0 +1,9 @@
+id: data_fixtures_export_taxonomy_term
+label: 'Export as data fixtures'
+status: true
+langcode: en
+type: taxonomy_term
+plugin: data_fixtures_export
+dependencies:
+  module:
+    - taxonomy
